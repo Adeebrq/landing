@@ -1,40 +1,201 @@
-  /* Animated gradient divider */
-  .divider{
-    margin: 2em auto;
-    width: 80%;
-    max-width: 600px;
-    height: 3px;
-    position: relative;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #161624;
+  font-family: 'Poppins', sans-serif;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 70vw;
+  max-width: 400px;
+  max-height: 500px;
+  background: #060c21;
+  padding: 20px;
+  margin: 20px;
+}
+.box .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  color: #ddd;
+  letter-spacing: 0.2rem;
+  padding: 20px;
+  text-align: center;
+}
+.box .content h1 {
+  font-size: clamp(1.7rem, 5vw, 2.1rem);
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+}
+.box .content p {
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+}
+.box .content h3 {
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  line-height: 2.5rem;
+}
+.box .glass {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: block;
+  pointer-events: none;
+}
+
+/* Divider styles with animated borders */
+.divider {
+  position: relative;
+  height: 3px;
+  width: 80%;
+  margin: 30px auto;
+  background: #060c21;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  z-index: -1;
+}
+
+.divider:nth-child(1):before,
+.divider:nth-child(1):after {
+  background: conic-gradient(from var(--angle), #0c63e7, #060c21, #d11149, #060c21, #0c63e7);
+}
+
+.divider:nth-child(2):before,
+.divider:nth-child(2):after {
+  background: conic-gradient(from var(--angle), #f35807, #060c21, #36d709, #060c21, #f35807);
+}
+
+.divider:nth-child(3):before,
+.divider:nth-child(3):after {
+  background: conic-gradient(from var(--angle), #dfff00, #060c21, #9600ff, #060c21, #dfff00);
+}
+
+.divider::after {
+  z-index: -2;
+  filter: blur(20px);
+}
+
+.divider:hover::before,
+.divider:hover::after {
+  animation: glowing-border 3.5s linear infinite;
+}
+
+.divider:hover::after {
+  animation: glowing-border 3.5s linear infinite, blur-effect 3.5s linear infinite;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 53deg;
+  inherits: false;
+}
+@keyframes glowing-border {
+  from {
+      --angle: 53deg;
   }
-  
-  @property --angle{
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
+  to {
+      --angle: 413deg;
   }
-  
-  .divider::after, .divider::before{
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    z-index: -1;
-    border-radius: 3px;
-    animation: 3s spin linear infinite;
+}
+@keyframes blur-effect {
+  from {
+      filter: blur(20px);
   }
-  .divider::before{
-    filter: blur(1.5rem);
-    opacity: 0.5;
+  to {
+      filter: blur(19px);
   }
-  @keyframes spin{
-    from{
-      --angle: 0deg;
-    }
-    to{
-      --angle: 360deg;
-    }
+}
+@media (max-width: 1024px) {
+  .card {
+      gap: 80px;
   }
+  .box {
+      width: 35vw;
+      height: 45vh;
+  }
+  .box .content h1 {
+      font-size: clamp(1.5rem, 5vw, 1.7rem);
+  }
+  .box .content p,
+  .box .content h3 {
+      font-size: clamp(0.8rem, 2.5vw, 1rem);
+  }
+  .divider {
+      width: 90%;
+      margin: 20px auto;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+      padding: 12px;
+  }
+  .card {
+      gap: 40px;
+  }
+  .box {
+      width: 40vw;
+      height: 40vh;
+  }
+  .box .content {
+      padding: 10px 15px;
+  }
+  .box .content h1 {
+      font-size: clamp(1.3rem, 3vw, 1.4rem);
+  }
+  .box .content p,
+  .box .content h3 {
+      font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+  }
+  .divider {
+      width: 95%;
+      margin: 15px auto;
+  }
+}
+@media (max-width: 480px) {
+  .box {
+      width: 70vw;
+      height: 35vh;
+      padding: 10px;
+  }
+  .content {
+      gap: 5px;
+      padding: 10px;
+  }
+  .content h1 {
+      font-size: 1.3rem;
+  }
+  .content p,
+  .content h3 {
+      font-size: 1rem;
+  }
+  .divider {
+      width: 100%;
+      margin: 10px auto;
+  }
+}
