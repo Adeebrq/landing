@@ -408,20 +408,20 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
           className="staggered-menu-header absolute top-0 left-0 w-full flex items-center justify-between p-[2em] bg-transparent pointer-events-none z-20"
           aria-label="Main navigation header"
         >
-          <div className="sm-logo flex items-center gap-3 select-none pointer-events-auto bg-black/70 border rounded-2xl px-2 py-1" aria-label="Logo">
-            <div className='gap-0 flex flex-row items-center'>
-              <img
-                src={img.src}
-                alt="Logo"
-                className="sm-logo-img block h-24 w-auto object-contain"
-                draggable={false}
-                style={{ height: '50px' }} 
-                width={280}
-                height={50}
-              />
-              <span className="sm-logo-text text-xl font-semibold font-happy text-white">4mulate</span>
-            </div>
-          </div>
+<div className="sm-logo flex items-center gap-3 select-none pointer-events-auto bg-black/70 border rounded-2xl px-2 py-1 sm:px-2 sm:py-1 px-1.5 py-0.5" aria-label="Logo">
+  <div className='gap-0 flex flex-row items-center'>
+    <img
+      src={img.src}
+      alt="Logo"
+      className="sm-logo-img block h-24 w-auto object-contain sm:h-auto h-auto"
+      draggable={false}
+      style={{ height: '50px' }} 
+      width={280}
+      height={50}
+    />
+    <span className="sm-logo-text sm:text-xl text-base font-semibold font-happy text-white">4mulate</span>
+  </div>
+</div>
 
           <button
             ref={toggleBtnRef}

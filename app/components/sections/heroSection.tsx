@@ -22,6 +22,13 @@ const socialItems = [
 ];
 
 function heroSection() {
+  const scrollToPricing = () => {
+    const element = document.querySelector('#pricing');
+    if (element && 'scrollIntoView' in element) {
+      (element as HTMLElement).scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <div className="z-50 h-screen w-full relative">
 
@@ -130,7 +137,7 @@ function heroSection() {
         </p>
 
 
-<button className="z-50 relative px-5 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 bg-black/80 text-white rounded-xl sm:rounded-2xl hover:bg-black/90 hover:scale-105 hover:-translate-y-1 transition-all duration-300 text-sm sm:text-base md:text-lg pointer-events-auto overflow-visible group cursor-pointer animate-slideUp" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
+<button onClick={scrollToPricing} className="z-50 relative px-5 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 bg-black/80 text-white rounded-xl sm:rounded-2xl hover:bg-black/90 hover:scale-105 hover:-translate-y-1 transition-all duration-300 text-sm sm:text-base md:text-lg pointer-events-auto overflow-visible group cursor-pointer animate-slideUp" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
   <span className="relative z-10">Get more info</span>
   
   {/* Gradient border overlay */}

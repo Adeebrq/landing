@@ -4,10 +4,13 @@ import { HeroParallax } from "../hero-parallax";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+
+
+
+
 export function HeroParallaxDemo() {
   return (
     <>
-      {/* <AboutUs /> */}
       <HeroParallax products={products} />
     </>
   );
@@ -119,93 +122,83 @@ const AboutUs = () => {
 
 export const products = [
   {
-    title: "Moonbeam",
-    link: "https://gomoonbeam.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+    title: "DigiHub - Digital marketing",
+    link: "https://placid-emoji-894267.framer.app/",
+    thumbnail: "/framer.png",
   },
   {
-    title: "Cursor",
-    link: "https://cursor.so",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+    title: "Gotham - custom chat room",
+    link: "https://gotham.4mulate.tech/",
+    thumbnail: "/gotham.png",
   },
   {
-    title: "Rogue",
-    link: "https://userogue.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
+    title: "saroscope - Liquidity pool checker",
+    link: "https://saroscope.4mulate.tech",
+    thumbnail: "/saroscope.png",
   },
   {
-    title: "Editorially",
-    link: "https://editorially.org",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+    title: "4mulate - Agency landing page",
+    link: "https://www.4mulate.tech/",
+    thumbnail: "/mulate.png",
   },
   {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+    title: "Subzero - Cryptocurrency trading platform",
+    link: "http://subzero.4mulate.tech/",
+    thumbnail: "/subzero.png"
   },
   {
-    title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+    title: "Crypto Chain - Cryptocurrency AI Saas",
+    link: "https://peaceful-operators-619463.framer.app/",
+    thumbnail: "/cryptochain.png"
   },
   {
-    title: "Algochurn",
-    link: "https://algochurn.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+    title: "The pod - Event Hosting",
+    link: "https://pod.4mulate.tech/",
+    thumbnail: "/thepod.png"
   },
   {
-    title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+    title: "DigiHub- Digital marketing",
+    link: "https://placid-emoji-894267.framer.app/",
+    thumbnail: "/framer.png",
   },
   {
-    title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+    title: "Gotham - custom chat room",
+    link: "https://gotham.4mulate.tech/",
+    thumbnail: "/gotham.png",
   },
   {
-    title: "SmartBridge",
-    link: "https://smartbridgetech.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+    title: "saroscope - Liquidity pool checker",
+    link: "https://saroscope.4mulate.tech",
+    thumbnail: "/saroscope.png",
   },
   {
-    title: "Renderwork Studio",
-    link: "https://renderwork.studio",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
+    title: "4mulate - Agency landing page",
+    link: "https://www.4mulate.tech/",
+    thumbnail: "/mulate.png",
   },
   {
-    title: "Creme Digital",
-    link: "https://cremedigital.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+    title: "Subzero - Cryptocurrency trading platform",
+    link: "http://subzero.4mulate.tech/",
+    thumbnail: "/subzero.png"
   },
   {
-    title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+    title: "Crypto Chain - Cryptocurrency AI Saas",
+    link: "https://peaceful-operators-619463.framer.app/",
+    thumbnail: "/cryptochain.png"
   },
   {
-    title: "Invoker Labs",
-    link: "https://invoker.lol",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+    title: "saroscope - Liquidity pool checker",
+    link: "https://saroscope.4mulate.tech",
+    thumbnail: "/saroscope.png",
   },
   {
-    title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+    title: "DigiHub - Digital marketing",
+    link: "https://placid-emoji-894267.framer.app/",
+    thumbnail: "/framer.png",
+  },
+  {
+    title: "saroscope - Liquidity pool checker",
+    link: "https://saroscope.4mulate.tech",
+    thumbnail: "/saroscope.png",
   },
 ];
