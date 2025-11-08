@@ -62,9 +62,9 @@ export default function Footer() {
             <div className="mt-8 sm:mt-10 lg:mt-12 pt-6 sm:pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center gap-4">
               <p className="text-gray-500 text-xs sm:text-sm">© 2025 4mulate. All rights reserved</p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 text-center">
-                <a href="#" className="text-gray-500 hover:text-[#3186ff] text-xs sm:text-sm transition-colors underline">
+                {/* <a href="#" className="text-gray-500 hover:text-[#3186ff] text-xs sm:text-sm transition-colors underline">
                   Terms of Service
-                </a>
+                </a> */}
                 <a href="mailto:4mulate.dev@gmail.com" className="text-gray-500 hover:text-[#3186ff] text-xs sm:text-sm transition-colors underline break-all">
                   4mulate.dev@gmail.com
                 </a>
