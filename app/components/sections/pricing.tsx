@@ -44,6 +44,7 @@ export default function PricingSection() {
       Book a call
     </button>
     <button
+      onClick={() => window.open('https://t.me/fourmulate', '_blank', 'noopener,noreferrer')}
       className='cursor-pointer w-full px-6 py-2 rounded-xl bg-gradient-to-b from-[#f5f5f5] to-[#d9d9d9] 
       text-black font-semibold transition-all duration-300 hover:from-[#e0e0e0] hover:to-[#bfbfbf]
       shadow-[inset_0_0_12px_0_rgba(0,0,0,0.4),inset_0_0_6px_0_rgba(50,50,50,0.1)]
@@ -109,6 +110,7 @@ export default function PricingSection() {
       </button>
 
       <button
+        onClick={() => window.open('https://t.me/fourmulate', '_blank', 'noopener,noreferrer')}
         className="cursor-pointer w-full px-6 py-2 rounded-xl bg-gradient-to-b from-[#f5f5f5] to-[#d9d9d9] 
         text-black font-semibold transition-all duration-300 hover:from-[#e0e0e0] hover:to-[#bfbfbf]
         shadow-[inset_0_0_12px_0_rgba(0,0,0,0.4),inset_0_0_6px_0_rgba(50,50,50,0.1)]
@@ -173,6 +175,7 @@ export default function PricingSection() {
 
 
 <button
+  onClick={() => window.open('https://t.me/fourmulate', '_blank', 'noopener,noreferrer')}
   className='cursor-pointer w-full px-6 py-2 rounded-xl bg-gradient-to-b from-[#f5f5f5] to-[#d9d9d9] 
   text-black font-semibold transition-all duration-300 hover:from-[#e0e0e0] hover:to-[#bfbfbf]
   shadow-[inset_0_0_12px_0_rgba(0,0,0,0.4),inset_0_0_6px_0_rgba(50,50,50,0.1)]

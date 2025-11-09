@@ -9,6 +9,7 @@ interface FAQ {
   id: number;
   question: string;
   answer: string;
+  telegramLink?: string;
 }
 const faqs: FAQ[] = [
   {
@@ -34,7 +35,8 @@ const faqs: FAQ[] = [
   {
     id: 5,
     question: "How can I communicate with the team?",
-    answer: "We communicate through your preferred channels - email, WhatsApp, or Telegram with 24/7 availability."
+    answer: "We communicate through your preferred channels - email, WhatsApp, or Telegram with 24/7 availability.",
+    telegramLink: "https://t.me/fourmulate"
   },
   {
     id: 6,
@@ -128,7 +130,22 @@ export default function ChatFAQ() {
                   
                   <div className="rounded-2xl rounded-tl-sm px-5 py-3 shadow-md max-w-[50%] border border-gray-800 bg-[#141414] text-gray-100">
                     <p className="text-sm md:text-base">
-                      {faq.answer}
+                      {faq.id === 5 ? (
+                        <>
+                          We communicate through your preferred channels - email, WhatsApp, or{' '}
+                          <a 
+                            href={faq.telegramLink} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-blue-400 hover:text-blue-300 underline"
+                          >
+                            Telegram
+                          </a>
+                          {' '}with 24/7 availability.
+                        </>
+                      ) : (
+                        faq.answer
+                      )}
                     </p>
                   </div>
                 </div>
