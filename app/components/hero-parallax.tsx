@@ -205,13 +205,13 @@ export const ProductCard = ({
     >
       <a
         href={product.link}
-        className="block group-hover/product:shadow-2xl h-full w-full"
+        className="block group-hover/product:shadow-2xl "
       >
         <img
           src={product.thumbnail}
           height="600"
           width="600"
-          className="object-cover object-center absolute h-full w-full inset-0"
+          className="object-cover object-left-top absolute h-full w-full inset-0"
           alt={product.title}
         />
       </a>
