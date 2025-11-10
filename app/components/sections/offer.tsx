@@ -23,12 +23,21 @@ export function OurOffer() {
   const gridItemRefs = useRef<HTMLLIElement[]>([]);
 
   useEffect(() => {
+    // Check if we're on iOS/mobile
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    const isMobile = window.innerWidth < 768;
+    const timers: NodeJS.Timeout[] = [];
+
     // Animate "What we offer" first, no delay
     if (whatWeOfferRef.current) {
-      gsap.fromTo(
-        whatWeOfferRef.current,
-        { opacity: 0, y: 50 },
-        {
+      // Set initial state - visible on iOS/mobile, hidden on desktop for animation
+      const initialOpacity = isIOS || isMobile ? 1 : 0;
+      const initialY = isIOS || isMobile ? 0 : 50;
+      gsap.set(whatWeOfferRef.current, { opacity: initialOpacity, y: initialY });
+      
+      // Only animate on desktop, iOS/mobile shows immediately
+      if (!isIOS && !isMobile) {
+        gsap.to(whatWeOfferRef.current, {
           opacity: 1,
           y: 0,
           duration: 1,
@@ -38,11 +47,11 @@ export function OurOffer() {
             start: "top 80%",
             toggleActions: "play none none none",
           },
-        }
-      );
+        });
+      }
     }
 
-    // Animate each grid item with a delay of 0.5s after the "What we offer"
+    // Animate each grid item
     gridItemRefs.current.forEach((el) => {
       if (!el) return;
       const icon = el.querySelector("svg");
@@ -51,10 +60,14 @@ export function OurOffer() {
 
       [icon, title, desc].forEach((elem) => {
         if (!elem) return;
-        gsap.fromTo(
-          elem,
-          { opacity: 0, y: 20 },
-          {
+        // Set initial state - visible on iOS/mobile, hidden on desktop for animation
+        const initialOpacity = isIOS || isMobile ? 1 : 0;
+        const initialY = isIOS || isMobile ? 0 : 20;
+        gsap.set(elem, { opacity: initialOpacity, y: initialY });
+        
+        // Only animate on desktop, iOS/mobile shows immediately
+        if (!isIOS && !isMobile) {
+          gsap.to(elem, {
             opacity: 1,
             y: 0,
             delay: 0.5,
@@ -65,10 +78,16 @@ export function OurOffer() {
               start: "top 80%",
               toggleActions: "play none none none",
             },
-          }
-        );
+          });
+        }
       });
     });
+
+    // Cleanup function
+    return () => {
+      timers.forEach(timer => clearTimeout(timer));
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
   }, []);
 
   // Corrected setGridItemRef with proper typing returning void and null check
@@ -124,6 +143,11 @@ pauseBetweenAnimations={1}
           <div
             ref={whatWeOfferRef}
             className="font-lt-cushion h-44 w-full md:h-56 rounded-2xl flex items-center justify-center text-2xl md:text-4xl font-semibold text-white"
+            style={{ 
+              opacity: 1,
+              WebkitFontSmoothing: 'antialiased',
+              MozOsxFontSmoothing: 'grayscale',
+            }}
           >
             What we offer
           </div>
@@ -192,10 +216,24 @@ const GridItem = React.forwardRef<HTMLLIElement, GridItemProps>(
                 {icon}
               </div>
               <div className="space-y-1">
-                <h3 className="font-lt-cushion text-lg md:text-xl font-semibold text-white">
+                <h3 
+                  className="font-lt-cushion text-lg md:text-xl font-semibold text-white"
+                  style={{ 
+                    opacity: 1,
+                    WebkitFontSmoothing: 'antialiased',
+                    MozOsxFontSmoothing: 'grayscale',
+                  }}
+                >
                   {title}
                 </h3>
-                <p className="font-lt-cushion text-sm text-neutral-400">
+                <p 
+                  className="font-lt-cushion text-sm text-neutral-400"
+                  style={{ 
+                    opacity: 1,
+                    WebkitFontSmoothing: 'antialiased',
+                    MozOsxFontSmoothing: 'grayscale',
+                  }}
+                >
                   {description}
                 </p>
               </div>

@@ -75,7 +75,7 @@ export default function PricingSection() {
 </div>
 
         {/* 2️⃣ Framework (Highlighted) */}
-        <div className="relative rounded-3xl h-[555px] scale-105 shadow-lg shadow-indigo-500/30 hover:scale-110 transition-transform duration-300 ease-out max-w-[330px] mx-auto">
+        <div className="relative rounded-3xl h-auto md:h-[555px] scale-105 shadow-lg shadow-indigo-500/30 hover:scale-110 transition-transform duration-300 ease-out max-w-[330px] mx-auto">
           <div className="absolute inset-0 rounded-3xl">
             <GlowingEffect
               blur={0}
@@ -142,9 +142,8 @@ export default function PricingSection() {
 </div>
 
         </div>
-
         {/* 3️⃣ Flagship */}
-        <div className="relative max-md:h-[580px] rounded-2xl h-[530px] hover:scale-105 transition-transform duration-300 ease-out max-w-[330px] mx-auto">
+        <div className="relative h-auto md:h-[530px] rounded-2xl hover:scale-105 transition-transform duration-300 ease-out max-w-[330px] mx-auto">
           <div className="absolute inset-0 rounded-2xl">
             <GlowingEffect
               blur={0}

@@ -190,7 +190,10 @@ html{scroll-behavior:smooth}
 }
 
 .font-lt-cushion {
-  font-family: 'LTCushion', sans-serif;
+  font-family: 'LTCushion', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .font-lt-museum {
