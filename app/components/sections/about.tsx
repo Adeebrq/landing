@@ -122,14 +122,14 @@ const AboutUs = () => {
 
 export const products = [
   {
-    title: "DigiHub - Digital marketing",
-    link: "https://placid-emoji-894267.framer.app/",
-    thumbnail: "/framer.png",
-  },
-  {
     title: "Gotham - custom chat room",
     link: "https://gotham.4mulate.tech/",
     thumbnail: "/gotham.png",
+  },
+  {
+    title: "DigiHub - Digital marketing",
+    link: "https://placid-emoji-894267.framer.app/",
+    thumbnail: "/framer.png",
   },
   {
     title: "saroscope - Liquidity pool checker",
