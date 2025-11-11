@@ -124,81 +124,81 @@ export const products = [
   {
     title: "Gotham - custom chat room",
     link: "https://gotham.4mulate.tech/",
-    thumbnail: "/gotham.png",
+    thumbnail: "/gotham.webp",
   },
   {
     title: "DigiHub - Digital marketing",
     link: "https://placid-emoji-894267.framer.app/",
-    thumbnail: "/framer.png",
+    thumbnail: "/framer.webp",
   },
   {
     title: "saroscope - Liquidity pool checker",
     link: "https://saroscope.4mulate.tech",
-    thumbnail: "/saroscope.png",
+    thumbnail: "/saroscope.webp",
   },
   {
     title: "4mulate - Agency landing page",
     link: "https://www.4mulate.tech/",
-    thumbnail: "/mulate.png",
+    thumbnail: "/mulate.webp",
   },
   {
     title: "Subzero - Cryptocurrency trading platform",
     link: "http://subzero.4mulate.tech/",
-    thumbnail: "/subzero.png"
+    thumbnail: "/subzero.webp"
   },
   {
     title: "Crypto Chain - Cryptocurrency AI Saas",
     link: "https://peaceful-operators-619463.framer.app/",
-    thumbnail: "/cryptochain.png"
+    thumbnail: "/cryptochain.webp"
   },
   {
     title: "The pod - Event Hosting",
     link: "https://pod.4mulate.tech/",
-    thumbnail: "/thepod.png"
+    thumbnail: "/thepod.webp"
   },
   {
     title: "DigiHub- Digital marketing",
     link: "https://placid-emoji-894267.framer.app/",
-    thumbnail: "/framer.png",
+    thumbnail: "/framer.webp",
   },
   {
     title: "Gotham - custom chat room",
     link: "https://gotham.4mulate.tech/",
-    thumbnail: "/gotham.png",
+    thumbnail: "/gotham.webp",
   },
   {
     title: "saroscope - Liquidity pool checker",
     link: "https://saroscope.4mulate.tech",
-    thumbnail: "/saroscope.png",
+    thumbnail: "/saroscope.webp",
   },
   {
     title: "4mulate - Agency landing page",
     link: "https://www.4mulate.tech/",
-    thumbnail: "/mulate.png",
+    thumbnail: "/mulate.webp",
   },
   {
     title: "Subzero - Cryptocurrency trading platform",
     link: "http://subzero.4mulate.tech/",
-    thumbnail: "/subzero.png"
+    thumbnail: "/subzero.webp"
   },
   {
     title: "Crypto Chain - Cryptocurrency AI Saas",
     link: "https://peaceful-operators-619463.framer.app/",
-    thumbnail: "/cryptochain.png"
+    thumbnail: "/cryptochain.webp"
   },
   {
     title: "saroscope - Liquidity pool checker",
     link: "https://saroscope.4mulate.tech",
-    thumbnail: "/saroscope.png",
+    thumbnail: "/saroscope.webp",
   },
   {
     title: "DigiHub - Digital marketing",
     link: "https://placid-emoji-894267.framer.app/",
-    thumbnail: "/framer.png",
+    thumbnail: "/framer.webp",
   },
   {
     title: "saroscope - Liquidity pool checker",
     link: "https://saroscope.4mulate.tech",
-    thumbnail: "/saroscope.png",
+    thumbnail: "/saroscope.webp",
   },
 ];

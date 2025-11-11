@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { Plus, Minus } from 'lucide-react';
 import Image from 'next/image';
-import logo from '@/public/logo.png';
+import logo from '@/public/logo.webp';
 
 interface FAQ {
   id: number;

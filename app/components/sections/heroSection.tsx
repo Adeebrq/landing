@@ -3,7 +3,7 @@ import GradientBlinds from "../GradientBlinds";
 import GradualBlur from "../GradualBlur";
 import StaggeredMenu from "../StaggeredMenu";
 
-import img from "../../assets/logo.png"
+
 
 const menuItems = [
   { label: 'Home', ariaLabel: 'Go to home section', link: '#home' },
@@ -42,7 +42,7 @@ function heroSection() {
      openMenuButtonColor="#fff"
      changeMenuColorOnOpen={true}
      colors={['#B19EEF', '#5227FF']}
-     logoUrl="../../assets/logo.png"
+     logoUrl="/logo.webp"
      accentColor="#2600ff"
      isFixed={true}
      onMenuOpen={() => console.log('Menu opened')}

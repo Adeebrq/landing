@@ -1,7 +1,7 @@
 import React, { useCallback, useLayoutEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 
-import img from "../../public/logo.png"
+import img from "../../public/logo.webp"
 
 
 export interface StaggeredMenuItem {
@@ -47,7 +47,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
   displaySocials = false,
   displayItemNumbering = true,
   className,
-  logoUrl = '/logo.png',
+  logoUrl = '/logo.webp',
   menuButtonColor = '#fff',
   openMenuButtonColor = '#fff',
   changeMenuColorOnOpen = true,

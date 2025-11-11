@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   title: "4mulate- Design, Develop, and Define Brands",
   description: "4mulate empowers businesses with next-gen branding, web design, and scalable development. From concept to launch, we engineer digital experiences that inspire trust and growth.",
   icons: {
-    icon: "/logo.png",
-    apple: "/logo.png",
+    icon: "/logo.webp",
+    apple: "/logo.webp",
   },
   openGraph: {
     title: "4mulate- Design, Develop, and Define Brands",
