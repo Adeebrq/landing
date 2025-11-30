@@ -31,7 +31,10 @@ export default function PricingSection() {
   <div className="relative bg-[#141414] border border-gray-800 rounded-2xl p-8 flex flex-col h-full">
   <div className="text-left mb-6">
     <h3 className="text-sm font-semibold mb-0">Foundation</h3>
-    <h4 className="text-3xl font-bold mb-4">$1,500</h4>
+    <div className="flex items-center gap-3 mb-4 justify-between">
+      <h4 className="text-3xl font-bold">$1,499</h4>
+      <span className="text-3xl font-bold line-through text-red-500/70">$3,000</span>
+    </div>
   </div>
   <div className="flex flex-col sm:flex-row gap-3 mb-6">
     <button
@@ -96,7 +99,7 @@ export default function PricingSection() {
       Most Popular
     </div>
     <h3 className="text-sm font-semibold mb-0">Framework</h3>
-    <h4 className="text-3xl font-bold mb-4">$3,500 – $5,000</h4>
+    <h4 className="text-3xl font-bold mb-4">$3,499 – $4,999</h4>
 
     <div className="flex flex-col sm:flex-row gap-3 mb-0">
       <button
