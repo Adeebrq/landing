@@ -161,7 +161,7 @@ export default function PricingSection() {
           <div className="relative bg-[#141414] rounded-2xl p-8 flex flex-col h-full">
             <div className="text-left mb-6">
               <h3 className="text-sm font-semibold mb-0">Flagship</h3>
-              <h4 className="text-3xl font-bold mb-4">$7,000 – $10,000+</h4>
+              <h4 className="text-3xl font-bold mb-4">6,999 – $9,999+</h4>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3 mb-6">
