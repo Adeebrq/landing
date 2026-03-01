@@ -58,12 +58,11 @@ export default function PricingSection() {
   </div>
   <div className="flex-1">
     <ul className="space-y-2 text-gray-300">
-      <li>✓ Multi-page site with 2D animations</li>
+      <li>✓ Single page site</li>
       <li>✓ Mobile responsive</li>
       <li>✓ Custom UI/UX design</li>
       <li>✓ Basic SEO included</li>
       <li>✓ Fully optimized</li>
-      <li>✓ Free hosting</li>
       <li>✓ 1-week delivery + support</li>
       <li>✓ Unlimited revisions</li>
     </ul>

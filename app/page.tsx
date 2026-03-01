@@ -12,6 +12,7 @@ import PricingSection from "./components/sections/pricing";
 import ChatFAQ from "./components/sections/Faq";
 import Footer from "./components/sections/footer";
 import { ContactUs } from "./components/sections/contact";
+// import Workflow  from "./components/sections/about2";
 
 
 export default function Home() {
@@ -30,6 +31,8 @@ export default function Home() {
       <section id="home">
         <HeroSection />
       </section>
+
+
       <section id="about">
         <HeroParallaxDemo/>
       </section>
