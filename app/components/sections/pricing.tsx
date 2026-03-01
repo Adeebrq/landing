@@ -57,7 +57,7 @@ export default function PricingSection() {
     </button>
   </div>
   <div className="flex-1">
-    <ul className="space-y-2 text-gray-300">
+    <ul className="space-y-2 text-gray-300 " > 
       <li>✓ Single page site</li>
       <li>✓ Mobile responsive</li>
       <li>✓ Custom UI/UX design</li>
